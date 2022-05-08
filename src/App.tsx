@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3'
+import PiChart from './components/piCharts';
 
 interface Iprops {
   data?: number[]
@@ -52,7 +53,8 @@ function MyD3Component(props: Iprops) {
 const App: React.FC = ()=>{
   return(
     <div>
-      <MyD3Component data={[1,2,3,6,4,2,6]}/>
+      {/* <MyD3Component data={[1,2,3,6,4,2,6]}/> */}
+      <PiChart />
     </div>
   )
 }
