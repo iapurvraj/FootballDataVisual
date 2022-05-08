@@ -49,7 +49,7 @@ function MyD3Component(props: Iprops) {
 }
 
 
-const App = ()=>{
+const App: React.FC = ()=>{
   return(
     <div>
       <MyD3Component data={[1,2,3,6,4,2,6]}/>
